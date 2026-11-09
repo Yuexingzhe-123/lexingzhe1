@@ -1,0 +1,52 @@
+⟦untrusted:cc26a70f⟧<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f7f0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="词间">
+  <meta name="description" content="词间 · 用精心设计的选择、拼写与闪卡训练，让每一次相遇都成为记忆。">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>词间 — Between Words</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar" id="topbar">
+      <button type="button" class="icon-button menu-button" id="menu-button" aria-label="打开导航菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="topbar-wordmark">BETWEEN WORDS</div>
+      <button type="button" class="avatar-button" id="account-button" aria-label="本地档案">词</button>
+    </header>
+    <main id="view" class="page-view" role="main" aria-live="polite">
+      <div class="loading-state"><div class="loading-mark">词间</div><p>让每一次相遇都成为记忆</p></div>
+    </main>
+    <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+    <aside id="drawer" class="drawer" aria-label="主导航" aria-hidden="true">
+      <div class="drawer-head">
+        <div class="drawer-logo">词</div>
+        <div><strong>词间</strong><small>BETWEEN WORDS</small></div>
+      </div>
+      <nav id="drawer-nav" class="drawer-nav"></nav>
+      <div class="drawer-foot">在词与词之间，慢慢走远。<span>v1.0 · PWA</span></div>
+    </aside>
+    <div id="modal" class="modal-layer" hidden>
+      <div class="modal-scrim" data-action="close-modal"></div>
+      <section class="modal-sheet" id="modal-content" role="dialog" aria-modal="true"></section>
+    </div>
+    <output id="toast" class="toast" aria-live="polite"></output>
+    <input type="file" id="import-file" accept=".txt,.csv,.tsv,.pdf,.png,.jpg,.jpeg,.webp,.bmp,text/plain,text/csv,application/pdf,image/*" hidden>
+    <input type="file" id="backup-file" accept=".json,application/json" hidden>
+  </div>
+  <noscript><p class="noscript">词间需要启用 JavaScript 才能学习单词。</p></noscript>
+  <script type="module" src="./src/app.mjs"></script>
+</body>
+</html>
+⟦/untrusted:cc26a70f⟧
