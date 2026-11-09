@@ -1,12 +1,10 @@
 /* Offline-first static PWA. Bump this version when releasing a new build. */
-const CACHE = 'cijian-paper-v1.2.0';
+const CACHE = 'cijian-paper-v1.2.1';
 const OCR_CACHE = 'cijian-ocr-assets-v1';
 const SHELL = [
   './', './index.html', './styles.css', './manifest.webmanifest',
   './src/app.mjs', './src/engine.mjs', './src/storage.mjs',
   './src/document-import.mjs', './src/cloud-ai.mjs', './src/reminders.mjs',
-  './vendor/pdf/pdf.min.mjs', './vendor/pdf/pdf.worker.min.mjs',
-  './vendor/tesseract/tesseract.min.js', './vendor/tesseract/worker.min.js',
   './data/cet4.tsv', './data/cet6.tsv',
   './icons/icon-192.png', './icons/icon-512.png',
   './VOCABULARY-LICENSE.txt'
